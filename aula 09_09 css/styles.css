@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    background-color: blueviolet;
+}
+
+
+h1{
+    color: red;
+    background-color: greenyellow;
+    text-align: center;
+    border: dotted 20px rgba(0,0,0,0,);
+    /*margin: 10%;*/
+
+}
+
+p{
+    font-style:italic;
+    margin: 5px 8px 10px 7px;
+    text-align: center;
+}
+
+

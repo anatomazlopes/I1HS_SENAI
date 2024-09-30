@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+        display: flex;
+            background-color: #dbb0b0;
+            overflow: hidden;
+            justify-content: center;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #291717;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            
+        }
+        .navbar a:hover {
+            background-color: #5e5e5e;
+            color: rgb(234, 210, 210);
+        }
+
+h1 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/*hover: pseudo classe*/
+button:hover {
+    background-color: #45a049;
+}
+
+#resultado {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}

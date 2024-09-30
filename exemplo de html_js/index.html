@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aparecida Nutrição</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="Desktop\atividade\logo\logo.jpg" alt="" class="logo">
+            Aparecida Nutrição
+        </h1>
+    </header>
+    <!--parte nova-->
+    <nav class = "navbar">
+        <a href="#home">Início</a>
+        <a href="services">Serviços</a>
+        <a href="about">Sobre nós</a>
+        <a href="contact">Contato</a>
+    </nav>
+    <main>
+        <section>
+            <strong>Calcule agora seu IMC:</strong>
+            <h2>Calculadora de IMC</h2>
+            <form id="imcForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" name="peso" required>
+
+                <label for="altura">Altura (m):</label>
+                <input type="number" id="altura" name="altura" step="0.01" required>
+
+                <button type="button" onclick="calcularIMC()">Calcular IMC</button>
+                <button type="reset" onclick="resetarFormulario()">Resetar</button>
+            </form>
+            <div id="resultado"></div>
+        </section>
+    </main>
+    <script>
+        function calcularIMC() {
+            const peso = parseFloat(document.getElementById('peso').value);
+            const altura = parseFloat(document.getElementById('altura').value);
+            const imc = (peso / (altura * altura)).toFixed(2);
+            document.getElementById('resultado').innerText = `IMC: ${imc}`;
+        }
+
+        function resetarFormulario() {
+            document.getElementById('resultado').innerText = '';
+        }
+    </script>
+</body>
+
+</html>
