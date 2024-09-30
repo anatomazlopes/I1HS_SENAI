@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.caixa {
+    width: 300px; /* Largura da caixa */
+    background-color: lightgrey; /* Cor de fundo do conteúdo */
+    padding: 20px; /* Espaço interno */
+    border: 5px solid blue; /* Borda */
+    margin: 30px; /* Espaço externo */
+    position: relative; /* Para posicionar o padding e a borda visualmente */
+}
+
+/* Elementos visuais para ajudar na visualização do Box Model */
+.caixa::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -30px; /* Posição da margem */
+    left: -30px; /* Posição da margem */
+    right: -30px; /* Posição da margem */
+    bottom: -5px; /* Ajusta a altura da borda */
+    background-color: rgba(0, 255, 0, 0.3); /* Cor da margin */
+    z-index: -1; /* Coloca atrás da caixa */
+}
+
+.caixa::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0; /* Começo da borda */
+    left: 0; /* Começo da borda */
+    right: 0; /* Começo da borda */
+    bottom: 0; /* Começo da borda */
+    border: 5px solid blue; /* Cor da borda */
+    box-sizing: border-box; /* Inclui a borda no cálculo de tamanho */
+    z-index: -1; /* Coloca atrás da caixa */
+}
+
+/* Adicionando um padding visual */
+.caixa p {
+    background-color: yellow; /* Cor do padding para visualização */
+    padding: 20px; /* Manter o padding interno */
+}
