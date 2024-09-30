@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.timing-functions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.timing {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s;
+}
+
+.linear {
+    transition: transform 0.3s linear;
+}
+
+.ease {
+    transition: transform 0.3s ease;
+}
+
+.ease-in {
+    transition: transform 0.3s ease-in;
+}
+
+.ease-out {
+    transition: transform 0.3s ease-out;
+}
+
+.ease-in-out {
+    transition: transform 0.3s ease-in-out;
+}
+
+.cubic-bezier {
+    transition: transform 0.3s cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+.step-start {
+    transition: transform 0.5s step-start;
+}
+
+.step-end {
+    transition: transform 0.5s step-end;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.step-start:hover {
+    transform: scale(1.1);
+}
+
+.step-end:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+/*O valor all na propriedade transition do CSS indica que a transição
+ deve ser aplicada a todas as propriedades que podem ser animadas do
+  elemento. Isso inclui propriedades como background-color, width, height, opacity,
+   entre outras.
+Por que usar all?
+Simplicidade: Usar all facilita a escrita do código, pois você não precisa 
+especificar cada propriedade individualmente. Isso é útil quando você tem várias
+ propriedades que mudam em uma interação. 
+ Exemplo:
+ .box {
+    transition: all 0.5s ease; /* Transição para todas as propriedades 
+}
+    Quando Não Usar all?
+Em alguns casos, pode ser mais eficiente especificar apenas as propriedades que 
+você deseja animar, especialmente se houver propriedades que mudam,
+ mas que você não quer que sejam animadas. Isso pode melhorar
+  o desempenho em situações complexas ou em elementos que têm muitos
+   estilos aplicados.
+*/
