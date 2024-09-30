@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ddb5fa;
+    font-family: Arial, sans-serif;
+    margin:350px 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.transition-example {
+    margin: 20px;
+    text-align: center;
+}
+
+.button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: green;
+}
+
+.fade {
+    opacity: 1;
+    padding: 10px 20px;
+    background-color: lightgray;
+    transition: opacity 0.5s ease;
+}
+
+.fade:hover {
+    opacity: 0.5;
+}
+
+.box {
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    transition: width 0.4s ease, height 0.4s ease;
+}
+
+.box:hover {
+    width: 150px;
+    height: 60px;
+}
+
+.card {
+    width: 200px;
+    height: 40px;
+    background-color: yellow;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.expand {
+    margin: 10px;
+    padding: 10px;
+    background-color: lightblue;
+    transition: margin 0.5s ease;
+}
+
+.expand:hover {
+    margin: 20px;
+}
+
+.border {
+    border: 2px solid transparent;
+    padding: 10px;
+    background-color: white;
+    transition: border-color 0.3s ease;
+}
+
+.border:hover {
+    border-color: blue;
+}
+
+.shadow {
+    background-color: lightgray;
+    padding: 10px 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.shadow:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.rotate {
+    background-color: coral;
+    padding: 10px 20px;
+    transition: transform 0.3s ease;
+}
+
+.rotate:hover {
+    transform: rotate(10deg);
+}
+
+.text-color {
+    color: black;
+    background-color: lightyellow;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+.text-color:hover {
+    color: red;
+}
+
+.thick-border {
+    border: 2px solid black;
+    padding: 10px;
+    background-color: white;
+    transition: border-width 0.3s ease;
+}
+
+.thick-border:hover {
+    border-width: 4px;
+}
+
+.move {
+    background-color: pink;
+    padding: 10px 20px;
+    transition: transform 0.3s ease;
+}
+
+.move:hover {
+    transform: translateY(-5px);
+}
