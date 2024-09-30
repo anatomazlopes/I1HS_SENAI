@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #34495e;
+}
+
+.exemplo {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+}
+
+.block {
+    display: block;
+    background-color: #ecf0f1;
+}
+
+.inline {
+    display: inline;
+    background-color: #95a5a6;
+    color: white;
+    padding: 5px 10px;
+    margin-right: 5px; /* Espaçamento entre elementos inline */
+}
+
+.inline-block {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+}
+
+.none {
+    display: none; /* Este elemento não será exibido */
+}
