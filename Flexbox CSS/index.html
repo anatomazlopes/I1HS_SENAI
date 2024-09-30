@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Flexbox CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Exemplos de Flexbox CSS</h1>
+
+    <!-- Exemplo 1: display: flex -->
+    <section>
+        <h2>Exemplo 1: display: flex;</h2>
+        <div class="flex-container display-flex">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+        <p><strong>display: flex;</strong> transforma um elemento em um contêiner flexível, permitindo que seus filhos (itens) sejam organizados de forma dinâmica.</p>
+    </section>
+
+    <!-- Exemplo 2: flex-direction -->
+    <section>
+        <h2>Exemplo 2: flex-direction</h2>
+        <div class="flex-container flex-direction-row">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+        <p><strong>flex-direction:</strong> <em>row</em> (padrão) organiza os itens em uma linha horizontal.</p>
+        
+        <div class="flex-container flex-direction-column">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+        <p><strong>flex-direction:</strong> <em>column</em> organiza os itens em uma coluna vertical.</p>
+
+        <div class="flex-container flex-direction-row-reverse">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+        <p><strong>flex-direction:</strong> <em>row-reverse</em> inverte a ordem dos itens na linha.</p>
+
+        <div class="flex-container flex-direction-column-reverse">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+        <p><strong>flex-direction:</strong> <em>column-reverse</em> inverte a ordem dos itens na coluna.</p>
+    </section>
+
+    <!-- Exemplo 3: justify-content -->
+    <section>
+        <h2>Exemplo 3: justify-content</h2>
+        <div class="flex-container justify-content-space-between">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+        <p><strong>justify-content:</strong> <em>space-between</em> distribui espaço igual entre os itens.</p>
+
+        <div class="flex-container justify-content-space-around">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+        <p><strong>justify-content:</strong> <em>space-around</em> distribui espaço igual ao redor dos itens.</p>
+
+        <div class="flex-container justify-content-center">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+        <p><strong>justify-content:</strong> <em>center</em> centraliza os itens ao longo do eixo principal.</p>
+
+        <div class="flex-container justify-content-flex-start">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+        <p><strong>justify-content:</strong> <em>flex-start</em> alinha os itens no início do contêiner.</p>
+
+        <div class="flex-container justify-content-flex-end">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+        <p><strong>justify-content:</strong> <em>flex-end</em> alinha os itens no final do contêiner.</p>
+    </section>
+
+    <!-- Exemplo 4: align-items -->
+    <section>
+        <h2>Exemplo 4: align-items</h2>
+        <div class="flex-container align-items-flex-start">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+        <p><strong>align-items:</strong> <em>flex-start</em> alinha os itens no início do eixo transversal.</p>
+
+        <div class="flex-container align-items-center">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+        <p><strong>align-items:</strong> <em>center</em> centraliza os itens ao longo do eixo transversal.</p>
+
+        <div class="flex-container align-items-flex-end">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+        <p><strong>align-items:</strong> <em>flex-end</em> alinha os itens no final do eixo transversal.</p>
+
+        <div class="flex-container align-items-stretch">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+        <p><strong>align-items:</strong> <em>stretch</em> faz os itens se esticarem para preencher o contêiner.</p>
+
+        <div class="flex-container align-items-baseline">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+        <p><strong>align-items:</strong> <em>baseline</em> alinha os itens na linha de base do texto.</p>
+    </section>
+
+    <!-- Exemplo 5: flex-wrap -->
+    <section>
+        <h2>Exemplo 5: flex-wrap</h2>
+        <div class="flex-container flex-nowrap">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+        <p><strong>flex-wrap:</strong> <em>nowrap</em> (padrão) mantém os itens em uma única linha.</p>
+
+        <div class="flex-container flex-wrap">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+            <div class="flex-item">Item 4</div>
+            <div class="flex-item">Item 5</div>
+            <div class="flex-item">Item 6</div>
+        </div>
+        <p><strong>flex-wrap:</strong> <em>wrap</em> permite que os itens se movam para a próxima linha.</p>
+
+        <div class="flex-container flex-wrap-reverse">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+            <div class="flex-item">Item 4</div>
+            <div class="flex-item">Item 5</div>
+            <div class="flex-item">Item 6</div>
+        </div>
+        <p><strong>flex-wrap:</strong> <em>wrap-reverse</em> faz os itens se moverem para a linha anterior.</p>
+    </section>
+
+    <!-- Exemplo 6: gap -->
+    <section>
+        <h2>Exemplo 6: gap</h2>
+        <div class="flex-container gap-example">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+        <p><strong>gap:</strong> define o espaço entre os itens. No exemplo acima, o espaço é de 10px.</p>
+    </section>
+
+    <!-- Exemplo 7: order -->
+    <section>
+        <h2>Exemplo 7: order</h2>
+        <div class="flex-container order-example">
+            <div class="flex-item" style="order: 2;">Item 1</div>
+            <div class="flex-item" style="order: 1;">Item 2</div>
+            <div class="flex-item" style="order: 3;">Item 3</div>
+        </div>
+        <p><strong>order:</strong> altera a ordem de exibição dos itens. No exemplo acima, Item 2 aparece primeiro por causa do valor <em>order: 1</em>.</p>
+    </section>
+
+    <!-- Exemplo 8: flex-grow -->
+    <section>
+        <h2>Exemplo 8: flex-grow</h2>
+        <div class="flex-container flex-grow-example">
+            <div class="flex-item" style="flex-grow: 2;">Item 1</div>
+            <div class="flex-item" style="flex-grow: 1;">Item 2</div>
+            <div class="flex-item" style="flex-grow: 1;">Item 3</div>
+        </div>
+        <p><strong>flex-grow:</strong> controla como os itens podem crescer para ocupar o espaço disponível. Item 1, com <em>flex-grow: 2</em>, ocupa duas vezes mais espaço do que os outros.</p>
+    </section>
+
+    <!-- Exemplo 9: flex-shrink -->
+    <section>
+        <h2>Exemplo 9: flex-shrink</h2>
+        <div class="flex-container flex-shrink-example">
+            <div class="flex-item" style="flex-shrink: 1;">Item 1</div>
+            <div class="flex-item" style="flex-shrink: 0;">Item 2</div>
+            <div class="flex-item" style="flex-shrink: 1;">Item 3</div>
+        </div>
+        <p><strong>flex-shrink:</strong> determina como os itens podem encolher. Item 2, com <em>flex-shrink: 0</em>, não encolhe, enquanto os outros podem.</p>
+    </section>
+</body>
+</html>
