@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Pseudo-Classes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Exemplos de pseudo-classes em transitions</h1>
+    <h1>:hover</h1>
+    <button class="button">Passe o mouse aqui</button>
+    <p>:hover aplica estilos quando o mouse está sobre o elemento.</p>
+
+    <h1>:focus</h1>
+    <input type="text" class="input-field" placeholder="Clique e foque aqui" />
+    <p>:focus aplica estilos quando o elemento está em foco, como em um campo de entrada.</p>
+
+    <h1>:active</h1>
+    <button class="button">Clique aqui</button>
+    <p>:active aplica estilos enquanto o elemento está sendo clicado.</p>
+
+    <h1>:visited</h1>
+    <a href="#" class="link">Link Visitado</a>
+    <p>:visited aplica estilos a links que já foram visitados pelo usuário.</p>
+
+    <h1>:first-child</h1>
+    <div class="list">
+        <div class="list-item">Primeiro Item</div>
+        <div class="list-item">Segundo Item</div>
+        <div class="list-item">Terceiro Item</div>
+    </div>
+    <p>:first-child aplica estilos ao primeiro filho de um elemento pai.</p>
+
+    <h1>:last-child</h1>
+    <ul>
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+        <li class="item">Item 4</li>
+    </ul>
+    <p>:last-child aplica estilos ao último filho de um elemento pai.</p>
+
+    <h1>:nth-child(n)</h1>
+    <ul>
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+        <li class="item">Item 4</li>
+    </ul>
+    <p>:nth-child(n) aplica estilos aos elementos filhos com base em sua posição.</p>
+
+    <h1>:nth-of-type(n)</h1>
+    <div class="type-example">
+        <p>Parágrafo 1</p>
+        <p>Parágrafo 2</p>
+        <p>Parágrafo 3</p>
+        <p>Parágrafo 4</p>
+    </div>
+    <p>:nth-of-type(n) aplica estilos a elementos do mesmo tipo com base em sua posição.</p>
+
+    <h1>:not(selector)</h1>
+    <div class="filter-example">
+        <div class="box active">Ativo</div>
+        <div class="box">Inativo</div>
+        <div class="box">Inativo</div>
+    </div>
+    <p>:not(selector) aplica estilos a elementos que não correspondem ao seletor fornecido.</p>
+
+    <h1>:checked</h1>
+    <label>
+        <input type="checkbox" class="checkbox"> Checkbox marcado
+    </label>
+    <p>:checked aplica estilos a elementos de formulário que estão marcados (como checkboxes).</p>
+
+    <h1>:disabled</h1>
+    <input type="text" class="disabled-input" placeholder="Desabilitado" disabled />
+    <p>:disabled aplica estilos a elementos que estão desabilitados.</p>
+
+    <h1>:empty</h1>
+    <div class="empty-example"></div>
+    <p>:empty seleciona elementos que não têm filhos.</p>
+
+    <h1>:first-of-type</h1>
+    <div class="type-example">
+        <p>Primeiro Parágrafo</p>
+        <p>Segundo Parágrafo</p>
+    </div>
+    <p>:first-of-type aplica estilos ao primeiro elemento de um tipo específico.</p>
+
+    <h1>:last-of-type</h1>
+    <div class="type-example">
+        <p>Primeiro Parágrafo</p>
+        <p>Último Parágrafo</p>
+    </div>
+    <p>:last-of-type aplica estilos ao último elemento de um tipo específico.</p>
+
+    <h1>:lang(language)</h1>
+    <p lang="en">Este texto está em inglês.</p>
+    <p lang="pt">Este texto está em português.</p>
+    <p>:lang(language) aplica estilos a elementos que têm um atributo lang específico.</p>
+</body>
+</html>

@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px 0 ;
+}
+
+.button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.button:hover {
+    background-color: green; /* Transição de cor ao passar o mouse */
+}
+
+.button:active {
+    transform: scale(0.95); /* Transição de transformação ao clicar */
+}
+
+.input-field {
+    border: 2px solid gray;
+    padding: 10px;
+    margin: 10px 0;
+    transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: blue; /* Transição de borda ao focar no campo */
+}
+
+.link {
+    color: purple;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link:visited {
+    color: gray; /* Transição de cor para links visitados */
+}
+
+.item {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+.item:nth-child(even):hover {
+    background-color: lightcoral; /* Transição de cor para itens pares ao passar o mouse */
+}
+
+.list-item {
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.list-item:first-child:hover {
+    background-color: yellow; /* Transição de cor para o primeiro item ao passar o mouse */
+}
+
+.box {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: lightgray;
+}
+
+.box:not(.active) {
+    opacity: 0.5; /* Estilo para elementos que não são ativos */
+}
+
+.checkbox:checked {
+    background-color: yellow; /* Estilo para checkboxes marcados */
+}
+
+.disabled-input {
+    background-color: lightgray; /* Estilo para campos desabilitados */
+}
+
+.empty-example {
+    border: 1px dashed red;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.type-example p:first-of-type {
+    font-weight: bold; /* Estilo para o primeiro parágrafo */
+}
+
+.type-example p:last-of-type {
+    color: blue; /* Estilo para o último parágrafo */
+}
+
+[type="lang"] {
+    color: green; /* Estilo para elementos com atributo lang */
+}
