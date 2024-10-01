@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content-box {
+    background-color: white;
+    border: 2px solid #007BFF; /* Borda azul */
+    padding: 20px; /* Espaçamento interno */
+    margin: 15px 0; /* Espaçamento externo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+h2 {
+    color: #007BFF; /* Cor do título */
+}
+
+p {
+    color: #333; /* Cor do texto */
+}
