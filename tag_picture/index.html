@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Imagem Responsiva com srcset e sizes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Exemplo de Imagem Responsiva com srcset e sizes</h1>
+    
+    <picture>
+        <source 
+            srcset="img.jpg 1200w, imagens/exemplo-800w.jpg 800w"
+            sizes="(min-width: 1200px) 1200px, (min-width: 768px) 800px, 100vw" 
+            alt="Imagem grande">
+
+        <source 
+            srcset="imagens/exemplo-800w.jpg 800w, imagens/exemplo-500w.jpg 500w"
+            sizes="(min-width: 768px) 800px, 100vw"
+            alt="Imagem média">         
+        <img src="imagens/exemplo-500w.jpg" alt="Imagem pequena">
+    </picture>
+    
+</body>
+</html>
